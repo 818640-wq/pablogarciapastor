@@ -43,8 +43,8 @@
 
     /* ========= Cursor global: círculo blanco ========= */
     :root{
-      --cursor-circle:url("data:image/svg+xml;utf8,/
-<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'>/
+      --cursor-circle:url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'>\
 <circle cx='10' cy='10' r='6.5' fill='white' stroke='white' stroke-width='1.5'/></svg>") 10 10, auto;
     }
     *{cursor:var(--cursor-circle)}
@@ -960,7 +960,7 @@ por los distintos paisajes que la rodean, unificandolos en un espacio de calma y
  data-id="Residencia de estudiantes en Logroño"
  data-cat="Habitar"
  data-desc="El proyecto envuelve la Iglesia de San Bartolomé mediante dos volúmenes conectados que generan una plaza interior con el objetivo de oxigenar el entorno inmediato y favorecer la vida pública. Un basamento de hormigón prolonga la línea de los zócalos de piedra existentes, reforzando la continuidad material del conjunto urbano. Sobre él, un revestimiento de madera cubre el resto de la envolvente que se separa de las construcciones colindantes mediante una franja vertical retranqueada de vidrio, actuando como transición entre lo nuevo y lo preexistente. La envolvente interior, orientada hacia la iglesia se resuelve con una piel de vidrio protegida por lamas de madera verticales, contribuyendo a la unidad de los alzados que enmarcan la plaza."
- data-images="RESIDENCIA/0.PNG|RESIDENCIA/13.PNG|RESIDENCIA/1.PNG|RESIDENCIA/9.PNG|RESIDENCIA/6.PNG|RESIDENCIA/7.PNG|RESIDENCIA/10.PNG|RESIDENCIA/8.PNG|RESIDENCIA/12.PNG|RESIDENCIA/11.PNG|RESIDENCIA/3.PNG|RESIDENCIA/2.PNG"
+ data-images="RESIDENCIA/0.PNG|RESIDENCIA/13.PNG|RESIDENCIA/1.PNG|RESIDENCIA/9.PNG|RESIDENCIA/6.PNG|RESIDENCIA/7.PNG|RESIDENCIA/10.PNG|RESIDENCIA/8.PNG|RESIDENCIA/12.PNG|RESIDENCIA/11.PNG|RESIDENCIA/3.PNG|RESIDENCIA/2.PNG|
  style="left:12%; top:80px;">
     
     <div class="head">Residencia de estudiantes en Logroño</div>
@@ -1560,6 +1560,7 @@ btnTFG.addEventListener('click', e => {
 
   // Ruta absoluta (Windows) - OJO: espacios codificados
   cvFrame.src = "TFG.pdf#page=1&zoom=page-fit&toolbar=0";
+
   btnTFG.classList.add('active');
   btnCV.classList.remove('active');
   btnProyectos.classList.remove('active');
