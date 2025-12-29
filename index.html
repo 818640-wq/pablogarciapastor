@@ -700,6 +700,20 @@ body.view-doc #regroupRow {
   background: rgba(0,0,0,.18);
   border-color: rgba(0,0,0,.12);
 }
+/* ===== GRID: 3 columnas + tarjetas más grandes en escritorio ===== */
+@media (min-width: 1100px){
+  :root{
+    --grid-card-w: 360px;  /* ancho tarjeta (prueba 340–420) */
+    --grid-card-h: 420px;  /* alto tarjeta  (prueba 380–520) */
+  }
+
+  .gridWrap{
+    grid-template-columns: repeat(3, var(--grid-card-w));
+    grid-auto-rows: var(--grid-card-h);
+    justify-content: center;
+    gap: 28px; /* opcional: más aire */
+  }
+}
 
   </style>
 <base target="_blank">
